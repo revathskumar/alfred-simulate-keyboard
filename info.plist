@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.revathskumar.simulateinput</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D1117791-60FA-42AD-A1F2-FAA2E857CD9E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>60490815-1853-4D4B-AB7A-8E0EBF3BBEA6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Revath S Kumar (@revathskumar)</string>
+	<key>description</key>
+	<string>Simulate Keyboard Input where paste doesn't work</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Simulate Keyboard Input</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+  tell application "System Events" to keystroke q
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>D1117791-60FA-42AD-A1F2-FAA2E857CD9E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Simulate Type</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>60490815-1853-4D4B-AB7A-8E0EBF3BBEA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Simulate Keyboard Input where paste doesn't work
+
+Icon: Robot 2 by https://icons8.com
+Icon License: https://icons8.com/license</string>
+	<key>uidata</key>
+	<dict>
+		<key>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>60490815-1853-4D4B-AB7A-8E0EBF3BBEA6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+		<key>D1117791-60FA-42AD-A1F2-FAA2E857CD9E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>545</integer>
+			<key>ypos</key>
+			<integer>55</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://blog.revathskumar.com</string>
+</dict>
+</plist>
